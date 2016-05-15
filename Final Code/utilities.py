@@ -188,7 +188,11 @@ def doMarkovNaive(testSampleSize = 1000):
 				for logFile in os.listdir(path):
 					# logFile contains ID
 					print logFile
-					cluster = int(idToCluster.loc[logFile]['cluster'])
+					try:
+						cluster = int(idToCluster.loc[logFile]['cluster'])
+					except KeyError:
+						continue
+					
 					print "Cluster for " + logFile + " is " + str(cluster) + "\n"
 
 					if limit == 0:
