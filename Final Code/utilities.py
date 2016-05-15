@@ -169,7 +169,7 @@ def doMarkovNaive(testSampleSize = 1000):
 	limit = testSampleSize
 	finished = False
 	parse = True
-	basepath = '../../alllogs/'
+	basepath = '../../../alllogs/'
 
 	try:
 		os.listdir(basepath)
