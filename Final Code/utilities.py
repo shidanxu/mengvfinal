@@ -19,7 +19,7 @@ def get_all_files(mypath):
 
 
 
-def statesToPeriod(states, timePeriod = 15):
+def statesToPeriod(states, timePeriod = 1):
 	lengthPeriods = 24*60 / timePeriod
 	# print lengthPeriods
 	periods = [1]*lengthPeriods
@@ -33,7 +33,7 @@ def statesToPeriod(states, timePeriod = 15):
 	# print periods
 	return periods
 
-def timeToIndex(datetimeObj, timePeriod = 15):
+def timeToIndex(datetimeObj, timePeriod = 1):
 	assert 60 / timePeriod
 	return datetimeObj.hour * 60 / timePeriod + datetimeObj.minute / timePeriod
 
@@ -62,7 +62,7 @@ def computeProbabilityMatrix(transitionMatrix):
 	# print normed_matrix
 	return normed_matrix
 
-def generateDataFromMarkovMatrix(markovMatrix, period = 15):
+def generateDataFromMarkovMatrix(markovMatrix, period = 1):
 	numStates = markovMatrix.shape[0]
 	# print numStates
 	sampleLength = 60*24 / period
@@ -146,6 +146,21 @@ def evaluate1(dailyStates, size = 10000, basepath = '../../../alllogs/'):
 	# plt.hist(distributionGenerated)
 	# plt.savefig("results.png")
 
+	print len(distributionGenerated)
+	print len(distributionTest)
+
+	bins = np.linspace(min(min(distributionGenerated), min(distributionTest)), max(max(distributionGenerated), max(dist2)), 50)
+	plt.hist(distributionTest, bins, alpha =0.5, label = 'Markov Generated')
+	plt.hist(distributionGenerated, bins, alpha = 0.5, label = 'Test Set')
+	plt.legend(loc='upper right')
+	plt.title("Distribution of Daily Number of Transitions")
+
+	plt.xlabel("Number Transitions")
+	plt.ylabel("Days")
+
+	plt.savefig("Markov On All.png")
+
+	plt.show()
 	return
 
 def countTransitions(dayStates):
