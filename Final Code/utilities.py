@@ -104,7 +104,7 @@ def generateDataFromMarkovMatrix(markovMatrix, period = 15):
 	# print output, len(output)
 	return output
 # Evaluate 1 compares the distribution of number of transitions each day for both the generated and testing actual data
-def evaluate1(dailyStates, size = 1000, basepath = '../../alllogs/'):
+def evaluate1(dailyStates, size = 1000, basepath = '../../../alllogs/'):
 	print "length of dailyStates,", len(dailyStates)
 	print "size: ", size
 	assert len(dailyStates) == size
@@ -206,11 +206,11 @@ def doMarkovNaive(testSampleSize = 1000):
 					transitionMatrix = computeTransitionMatrix(periods)
 
 					totalTransitionMatrix = totalTransitionMatrix + transitionMatrix
-					if cluster == 2:
-						cluster2Matrix += transitionMatrix
 					if cluster == 1:
+						cluster2Matrix += transitionMatrix
+					if cluster == 0:
 						cluster1Matrix += transitionMatrix
-					if cluster == 3:
+					if cluster == 2:
 						cluster3Matrix += transitionMatrix
 
 					limit -= 1
