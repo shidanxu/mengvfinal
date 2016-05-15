@@ -12,6 +12,7 @@ from sklearn.preprocessing import normalize
 import random
 import matplotlib.pyplot as plt
 import features
+import pandas as pd
 
 def get_all_files(mypath):
 	return [ f for f in os.listdir(mypath) if os.path.isdir(os.path.join(mypath,f)) ]
