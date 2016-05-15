@@ -100,8 +100,6 @@ def timeOfDay(line):
 
     return hour
 
-def dayOfWeek(line):
-
 def durationLessThanMinute(line):
     return duration(line)/60 < 1
 
