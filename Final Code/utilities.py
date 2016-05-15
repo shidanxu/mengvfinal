@@ -157,7 +157,7 @@ def countTransitions(dayStates):
 			currentState = state
 	return total
 
-def doMarkovNaive(testSampleSize = 1000):
+def doMarkovNaive(testSampleSize = 10000):
 	idToCluster = pd.read_pickle("../datasets/mergedWithCluster.pickle")
 
 	totalTransitionMatrix = np.matrix([[0,0,0], [0,0,0], [0,0,0]])
