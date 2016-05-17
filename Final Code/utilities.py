@@ -19,7 +19,7 @@ def get_all_files(mypath):
 
 
 
-def statesToPeriod(states, timePeriod = 1):
+def statesToPeriod(states, timePeriod = 20):
 	lengthPeriods = 24*60 / timePeriod
 	# print lengthPeriods
 	periods = [1]*lengthPeriods
@@ -33,7 +33,7 @@ def statesToPeriod(states, timePeriod = 1):
 	# print periods
 	return periods
 
-def timeToIndex(datetimeObj, timePeriod = 1):
+def timeToIndex(datetimeObj, timePeriod = 20):
 	assert 60 / timePeriod
 	return datetimeObj.hour * 60 / timePeriod + datetimeObj.minute / timePeriod
 
@@ -62,7 +62,7 @@ def computeProbabilityMatrix(transitionMatrix):
 	# print normed_matrix
 	return normed_matrix
 
-def generateDataFromMarkovMatrix(markovMatrix, period = 1):
+def generateDataFromMarkovMatrix(markovMatrix, period = 20):
 	numStates = markovMatrix.shape[0]
 	# print numStates
 	sampleLength = 60*24 / period
@@ -149,7 +149,7 @@ def evaluate1(dailyStates, size = 10000, basepath = '../../../alllogs/'):
 	print len(distributionGenerated)
 	print len(distributionTest)
 
-	bins = np.linspace(min(min(distributionGenerated), min(distributionTest)), max(max(distributionGenerated), max(dist2)), 50)
+	bins = np.linspace(min(min(distributionGenerated), min(distributionTest)), max(max(distributionGenerated), max(distributionTest)), 50)
 	plt.hist(distributionTest, bins, alpha =0.5, label = 'Markov Generated')
 	plt.hist(distributionGenerated, bins, alpha = 0.5, label = 'Test Set')
 	plt.legend(loc='upper right')
