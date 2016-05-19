@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  17 MAY 2016 03:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 MAY 2016 01:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**thesisv2.tex
-(./thesisv2.tex
+**thesisv4.tex
+(./thesisv4.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
@@ -362,30 +362,34 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
+(/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 \c@theorem=\count128
 \c@hyp=\count129
 \c@subhyp=\count130
- (./thesisv2.aux)
-\openout1 = `thesisv2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 61.
+(./thesisv4.aux)
+\openout1 = `thesisv4.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 62.
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    ... okay on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -480,136 +484,173 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 62.
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 62.
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
- [4]
-<topneqphy.png, id=22, 244.915pt x 256.96pt>
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
+thesisv4.toc
+[3])
+\tf@toc=\write4
+\openout4 = `thesisv4.toc'.
+
+ [4] (./thesisv4.lof)
+\tf@lof=\write5
+\openout5 = `thesisv4.lof'.
+
+ (./thesisv4.lot [5])
+\tf@lot=\write6
+\openout6 = `thesisv4.lot'.
+
+ [6]
+<topneqphy.png, id=31, 244.915pt x 256.96pt>
 File: topneqphy.png Graphic file (type png)
  <use topneqphy.png>
-Package pdftex.def Info: topneqphy.png used on input line 143.
+Package pdftex.def Info: topneqphy.png used on input line 123.
 (pdftex.def)             Requested size: 284.53508pt x 313.00455pt.
- [5] [6 <./topneqphy.png>] [7] [8] [9] [10] [11] [12]
-<imapSample.png, id=51, 1027.84pt x 486.81876pt>
+ [7] [8 <./topneqphy.png>] [9] [10] [11] [12] [13] [14]
+<imapSample.png, id=61, 1027.84pt x 486.81876pt>
 File: imapSample.png Graphic file (type png)
  <use imapSample.png>
-Package pdftex.def Info: imapSample.png used on input line 247.
+Package pdftex.def Info: imapSample.png used on input line 225.
 (pdftex.def)             Requested size: 426.79659pt x 199.16614pt.
- [13 <./imapSample.png (PNG copy)>] [14] [15] <figure_1.png, id=64, 578.16pt x 
+ [15 <./imapSample.png (PNG copy)>] [16] [17] <figure_1.png, id=72, 578.16pt x 
 433.62pt>
 File: figure_1.png Graphic file (type png)
 
 <use figure_1.png>
-Package pdftex.def Info: figure_1.png used on input line 319.
+Package pdftex.def Info: figure_1.png used on input line 297.
 (pdftex.def)             Requested size: 426.79071pt x 312.99353pt.
- [16] [17 <./figure_1.png>] [18]
-<3ClusterKMeans.png, id=76, 578.16pt x 433.62pt>
+ [18] [19 <./figure_1.png>] [20]
+<3ClusterKMeans.png, id=84, 578.16pt x 433.62pt>
 File: 3ClusterKMeans.png Graphic file (type png)
  <use 3ClusterKMeans.png>
-Package pdftex.def Info: 3ClusterKMeans.png used on input line 396.
+Package pdftex.def Info: 3ClusterKMeans.png used on input line 371.
 (pdftex.def)             Requested size: 341.42903pt x 227.62082pt.
 
-[19] <cluterWifiWeekday.png, id=81, 578.16pt x 433.62pt>
+[21] <cluterWifiWeekday.png, id=88, 578.16pt x 433.62pt>
 File: cluterWifiWeekday.png Graphic file (type png)
 
 <use cluterWifiWeekday.png>
-Package pdftex.def Info: cluterWifiWeekday.png used on input line 402.
+Package pdftex.def Info: cluterWifiWeekday.png used on input line 377.
 (pdftex.def)             Requested size: 341.42903pt x 227.62082pt.
 
-<Threefactorclustering.png, id=82, 578.16pt x 433.62pt>
+<Threefactorclustering.png, id=89, 578.16pt x 433.62pt>
 File: Threefactorclustering.png Graphic file (type png)
 
 <use Threefactorclustering.png>
-Package pdftex.def Info: Threefactorclustering.png used on input line 408.
+Package pdftex.def Info: Threefactorclustering.png used on input line 383.
 (pdftex.def)             Requested size: 341.42903pt x 256.085pt.
- [20 <./3ClusterKMeans.png> <./cluterWifiWeekday.png>] [21 <./Threefactorcluste
-ring.png>] [22]
-<clusteredAVGNUMSESSION.png, id=95, 628.0263pt x 478.4274pt>
+ [22 <./3ClusterKMeans.png> <./cluterWifiWeekday.png>] [23 <./Threefactorcluste
+ring.png>] [24]
+<clusteredAVGNUMSESSION.png, id=103, 628.0263pt x 478.4274pt>
 File: clusteredAVGNUMSESSION.png Graphic file (type png)
 
 <use clusteredAVGNUMSESSION.png>
-Package pdftex.def Info: clusteredAVGNUMSESSION.png used on input line 472.
+Package pdftex.def Info: clusteredAVGNUMSESSION.png used on input line 447.
 (pdftex.def)             Requested size: 256.08376pt x 170.71529pt.
- [23 <./clusteredAVGNUMSESSION.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 507.
+ [25 <./clusteredAVGNUMSESSION.png>] [26]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 492.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 507.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 492.
 
-<ridgeScores.png, id=101, 578.16pt x 433.62pt>
+<ridgeScores.png, id=113, 578.16pt x 432.1746pt>
 File: ridgeScores.png Graphic file (type png)
  <use ridgeScores.png>
-Package pdftex.def Info: ridgeScores.png used on input line 511.
-(pdftex.def)             Requested size: 284.52713pt x 199.16988pt.
- [24]
-<durationDistribution.png, id=106, 578.16pt x 433.62pt>
+Package pdftex.def Info: ridgeScores.png used on input line 496.
+(pdftex.def)             Requested size: 284.52713pt x 199.16542pt.
+ [27]
+<durationDistribution.png, id=117, 578.16pt x 433.62pt>
 File: durationDistribution.png Graphic file (type png)
 
 <use durationDistribution.png>
-Package pdftex.def Info: durationDistribution.png used on input line 519.
+Package pdftex.def Info: durationDistribution.png used on input line 506.
 (pdftex.def)             Requested size: 284.52713pt x 199.16988pt.
- [25 <./ridgeScores.png> <./durationDistribution.png>] [26] [27] <ppsample.png,
- id=119, 867.24pt x 714.0276pt>
+ [28 <./ridgeScores.png> <./durationDistribution.png>] <c3avgses.png, id=123, 5
+78.16pt x 433.62pt>
+File: c3avgses.png Graphic file (type png)
+ <use c3avgses.png>
+Package pdftex.def Info: c3avgses.png used on input line 536.
+(pdftex.def)             Requested size: 284.52713pt x 199.16988pt.
+ [29]
+[30 <./c3avgses.png>] [31]
+<durationDistPie.png, id=138, 643.9257pt x 433.62pt>
+File: durationDistPie.png Graphic file (type png)
+ <use durationDistPie.png>
+Package pdftex.def Info: durationDistPie.png used on input line 578.
+(pdftex.def)             Requested size: 284.5269pt x 256.085pt.
+
+[32 <./durationDistPie.png>] [33]
+<neuralnet.png, id=146, 350.30875pt x 294.09875pt>
+File: neuralnet.png Graphic file (type png)
+ <use neuralnet.png>
+Package pdftex.def Info: neuralnet.png used on input line 622.
+(pdftex.def)             Requested size: 284.54498pt x 227.62349pt.
+ [34 <./neuralnet.png>] [35] [36] [37] <ppsample.png, id=161, 867.24pt x 714.02
+76pt>
 File: ppsample.png Graphic file (type png)
 
 <use ppsample.png>
-Package pdftex.def Info: ppsample.png used on input line 563.
+Package pdftex.def Info: ppsample.png used on input line 693.
 (pdftex.def)             Requested size: 341.43787pt x 284.52736pt.
- [28] [29 <./ppsample.png>] [30] [31] [32] [33]
+ [38 <./ppsample.png>] [39] [40] [41] [42] [43] [44]
 File: imapSample.png Graphic file (type png)
 
 <use imapSample.png>
-Package pdftex.def Info: imapSample.png used on input line 633.
+Package pdftex.def Info: imapSample.png used on input line 787.
 (pdftex.def)             Requested size: 426.79659pt x 199.16614pt.
- [34] <dataSample.png, id=143, 1027.84pt x 377.41pt>
+ [45] <dataSample.png, id=188, 1027.84pt x 377.41pt>
 File: dataSample.png Graphic file (type png)
 
 <use dataSample.png>
-Package pdftex.def Info: dataSample.png used on input line 643.
+Package pdftex.def Info: dataSample.png used on input line 797.
 (pdftex.def)             Requested size: 426.79659pt x 142.25977pt.
- [35 <./dataSample.png (PNG copy)>] [36] [37] [38]
+ [46 <./dataSample.png (PNG copy)>] [47] [48] [49] [50]
 Missing character: There is no ï in font cmti10!
- [39]
-[40] (./thesisv2.aux) ) 
+
+[51] [52] (./thesisv4.aux) ) 
 Here is how much of TeX's memory you used:
- 5976 strings out of 493315
- 90523 string characters out of 6137904
- 250884 words of memory out of 5000000
- 9329 multiletter control sequences out of 15000+600000
+ 6032 strings out of 493315
+ 91472 string characters out of 6137904
+ 252192 words of memory out of 5000000
+ 9369 multiletter control sequences out of 15000+600000
  12791 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,7n,38p,1620b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-s
-uper/cm-super-ts1.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesisv2.pdf (40 pages, 1584813 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips
+/cm-super/cm-super-ts1.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmex10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr17.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr5.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
+.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on thesisv4.pdf (52 pages, 1725426 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
+ 269 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,6 @@
+\contentsline {table}{\numberline {1}{\ignorespaces Different kinds of Markov Models\cite {markov}\relax }}{17}
+\contentsline {table}{\numberline {2}{\ignorespaces Empirical estimates of transition probabilities. Data acquired on training sample (10000 user days).\relax }}{18}
+\contentsline {table}{\numberline {3}{\ignorespaces Empirical estimates of transition probabilities for all users.\relax }}{24}
+\contentsline {table}{\numberline {4}{\ignorespaces Empirical estimates of transition probabilities for the long duration cluster.\relax }}{24}
+\contentsline {table}{\numberline {5}{\ignorespaces Complexity of different approaches.\relax }}{40}
+\contentsline {table}{\numberline {6}{\ignorespaces Comparison of various Python probabilistic programming APIs.\relax }}{44}

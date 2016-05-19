@@ -1,0 +1,46 @@
+\contentsline {section}{\numberline {1}Introduction}{7}
+\contentsline {subsection}{\numberline {1.1}Project Background}{7}
+\contentsline {subsection}{\numberline {1.2}Current Internet Has Inefficiency}{7}
+\contentsline {subsection}{\numberline {1.3}Understand User Transition Behavior}{9}
+\contentsline {subsection}{\numberline {1.4}Relations to MobilityFirst}{9}
+\contentsline {subsection}{\numberline {1.5}Data Analysis Approaches on Networks Problem}{10}
+\contentsline {section}{\numberline {2}Previous Works on Quantitative Network Measurements}{11}
+\contentsline {subsection}{\numberline {2.1}Sookhyun Yang's Three State Markov Model}{11}
+\contentsline {subsubsection}{\numberline {2.1.1}Choosing the Dataset}{11}
+\contentsline {subsubsection}{\numberline {2.1.2}Comments on Yang's Work}{12}
+\contentsline {subsection}{\numberline {2.2}Beverly Applies Machine Learning to Extract Most Important IP Bit for Traffic Congestion}{13}
+\contentsline {subsection}{\numberline {2.3}Probabilistic Programming As a Tool For Fast Modeling}{13}
+\contentsline {section}{\numberline {3}Reproducing Yang Paper Results}{15}
+\contentsline {subsection}{\numberline {3.1}A Taste of the Data}{15}
+\contentsline {subsection}{\numberline {3.2}Markov Chain For Transition Prediction}{16}
+\contentsline {subsection}{\numberline {3.3}Evaluate Markov Chain Prediction}{18}
+\contentsline {subsection}{\numberline {3.4}Aspects of Modeling where Markov Chain Falls Short}{19}
+\contentsline {subsection}{\numberline {3.5}Questions that Emerge from Yang Experiment Reproduction}{20}
+\contentsline {section}{\numberline {4}Modeling}{21}
+\contentsline {subsection}{\numberline {4.1}Clustering Finds Three Groups}{21}
+\contentsline {subsection}{\numberline {4.2}Clustering Shines Light on Canonical User}{24}
+\contentsline {subsection}{\numberline {4.3}Regression Helps Weighing Factors}{25}
+\contentsline {subsubsection}{\numberline {4.3.1}Ridge Regression}{26}
+\contentsline {paragraph}{Background}{26}
+\contentsline {paragraph}{Results}{27}
+\contentsline {paragraph}{Predicting Session Duration is Difficult}{27}
+\contentsline {paragraph}{Predicting Number of Sessions}{29}
+\contentsline {subsubsection}{\numberline {4.3.2}Logistic Regression}{30}
+\contentsline {paragraph}{Background}{30}
+\contentsline {paragraph}{Results}{31}
+\contentsline {subsection}{\numberline {4.4}Neural Net Increases Performance}{33}
+\contentsline {subsubsection}{\numberline {4.4.1}Background}{33}
+\contentsline {paragraph}{Mathematical Background}{34}
+\contentsline {subsubsection}{\numberline {4.4.2}Results and Discussion}{35}
+\contentsline {subsection}{\numberline {4.5}Bayesian Modeling and Probabilistic Programming}{36}
+\contentsline {subsubsection}{\numberline {4.5.1}Generative vs. Descriptive Modeling}{36}
+\contentsline {subsubsection}{\numberline {4.5.2}Probabilistic Programming}{36}
+\contentsline {subsection}{\numberline {4.6}Failure to Capture Normal Distribution}{39}
+\contentsline {section}{\numberline {5}Evaluation}{40}
+\contentsline {subsection}{\numberline {5.1}Approach Comparison}{40}
+\contentsline {subsection}{\numberline {5.2}Speed}{40}
+\contentsline {section}{\numberline {6}Toolkit}{43}
+\contentsline {section}{\numberline {7}Challenges}{45}
+\contentsline {section}{\numberline {8}Contributions and Conclusion}{49}
+\contentsline {subsection}{\numberline {8.1}Contributions}{49}
+\contentsline {subsection}{\numberline {8.2}Conclusion}{49}
