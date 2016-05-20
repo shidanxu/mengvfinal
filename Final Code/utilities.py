@@ -263,7 +263,7 @@ def doMarkovNaive(testSampleSize = 10000):
 
 					periods = statesToPeriod(states)
 					numTrans, transitionMatrix = computeTransitionMatrix(periods)
-					trainingSetNumTransitions.append()
+					trainingSetNumTransitions.append(numTrans)
 
 					totalTransitionMatrix = totalTransitionMatrix + transitionMatrix
 					if cluster == 1:
@@ -307,7 +307,7 @@ def doMarkovNaive(testSampleSize = 10000):
 
 		numTrans, transitionMatrix = computeTransitionMatrix(markov_generated)
 		# print transitionMatrix
-		trainingSetNumTransitions.append(numTrans)
+		# trainingSetNumTransitions.append(numTrans)
 
 		testTransitionMatrix = testTransitionMatrix + transitionMatrix
 
