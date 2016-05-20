@@ -30,8 +30,8 @@ def statesToPeriod(states, timePeriod = 20):
 	for eachTuple in states:
 		time, state, ip = eachTuple
 		tillTimeIndex = timeToIndex(time)
-		for ind in range(currentStateStartIndex, tillTimeIndex):
-			periods[ind] = currentState
+		# for ind in range(currentStateStartIndex, tillTimeIndex):
+			# periods[ind] = currentState
 
 		periods[tillTimeIndex] = state
 		currentState = state
@@ -64,7 +64,7 @@ def computeTransitionMatrix(periods, states = 3):
 	assert sum([sum(item) for item in transitionMatrix]) == len(periods) - 1
 
 	# print "the matrix: ", np.matrix(transitionMatrix)
-	return totalNumTransitions, np.matrix(transitionMatrix)
+	return np.matrix(transitionMatrix)
 
 def computeProbabilityMatrix(transitionMatrix):
 	# print "to be normalized: ", transitionMatrix
@@ -272,7 +272,8 @@ def doMarkovNaive(testSampleSize = 10000):
 					# print states
 
 						periods = statesToPeriod(states)
-						numTrans, transitionMatrix = computeTransitionMatrix(periods)
+						transitionMatrix = computeTransitionMatrix(periods)
+						numTrans = countTransitions(periods)
 						trainingSetNumTransitions.append(numTrans)
 
 						totalTransitionMatrix = totalTransitionMatrix + transitionMatrix
@@ -315,7 +316,7 @@ def doMarkovNaive(testSampleSize = 10000):
 		markov_generated = generateDataFromMarkovMatrix(normed_matrix)
 		dailyStates.append(markov_generated)
 
-		numTrans, transitionMatrix = computeTransitionMatrix(markov_generated)
+		transitionMatrix = computeTransitionMatrix(markov_generated)
 		# print transitionMatrix
 		# trainingSetNumTransitions.append(numTrans)
 
