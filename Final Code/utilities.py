@@ -69,6 +69,37 @@ def generateDataFromMarkovMatrix(markovMatrix, period = 20):
 
 	output = [1]
 	currentState = 1
+	# Run 100 rounds to get current state some not always 1 state
+	for j in range(100):
+		randomNum = random.random()
+		# print "the random number is:", randomNum
+		if currentState == 1:
+			cumProb = np.cumsum(markovMatrix[0])
+			# print "state = 0, cumprob:", cumProb
+			for jj in range(len(cumProb)):
+				if randomNum < cumProb[jj]:
+					currentState = jj + 1
+					# print "i, currentState:", i, currentState
+					break
+		elif currentState == 2:
+			cumProb = np.cumsum(markovMatrix[1])
+			# print "state = 1, cumprob:", cumProb
+			for jj in range(len(cumProb)):
+				if randomNum < cumProb[jj]:
+					currentState = jj + 1
+					# print "i, currentState:", i, currentState
+					break
+		elif currentState == 3:
+			cumProb = np.cumsum(markovMatrix[2])
+			# print "state = 2, cumprob:", cumProb
+			for jj in range(len(cumProb)):
+				if randomNum < cumProb[jj]:
+					currentState = jj + 1
+					# print "i, currentState:", i, currentState
+					break
+		else:
+			print "ERROR: Current State is: " + str(currentState)
+
 	for i in range(sampleLength - 1):
 		# raw_input()
 		randomNum = random.random()
@@ -100,6 +131,9 @@ def generateDataFromMarkovMatrix(markovMatrix, period = 20):
 					currentState = jj + 1
 					# print "i, currentState:", i, currentState
 					break
+		else:
+			print "ERROR: Current State is: " + str(currentState)
+
 		# print "output: ", output
 	# print output, len(output)
 	return output
