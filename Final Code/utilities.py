@@ -148,7 +148,7 @@ def generateDataFromMarkovMatrix(markovMatrix, period = 20):
 	# print output, len(output)
 	return output
 # Evaluate 1 compares the distribution of number of transitions each day for both the generated and testing actual data
-def evaluate1(trainingSetNumTransitions, dailyStates, size = 1000, basepath = '../../../alllogs/'):
+def evaluate1(trainingSetNumTransitions, dailyStates, size = 10000, basepath = '../../../alllogs/'):
 	print "length of dailyStates,", len(dailyStates)
 	print "size: ", size
 	assert len(dailyStates) == size
@@ -220,7 +220,7 @@ def countTransitions(dayStates):
 			currentState = state
 	return total
 
-def doMarkovNaive(testSampleSize = 1000):
+def doMarkovNaive(testSampleSize = 10000):
 	idToCluster = pd.read_pickle("../datasets/mergedWithCluster.pickle")
 
 	totalTransitionMatrix = np.matrix([[0,0,0], [0,0,0], [0,0,0]])
