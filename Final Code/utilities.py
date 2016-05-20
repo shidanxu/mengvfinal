@@ -163,12 +163,13 @@ def evaluate1(trainingSetNumTransitions, dailyStates, size = 100000, basepath = 
 		
 		if os.path.isdir(path):
 			for logFile in os.listdir(path):
-				with open(os.path.join(path, logFile), 'r') as f:
-					limit -= 1
+				with open(os.path.join(path, logFile), 'r') as f:				
 					states = random_generator.parseEntry(path, logFile)
 					
-					periodStates = statesToPeriod(states)
-					distributionTest.append(countTransitions(periodStates))
+					if states != None:
+						limit -= 1
+						periodStates = statesToPeriod(states)
+						distributionTest.append(countTransitions(periodStates))
 
 				if limit == 0:
 					done = True
@@ -259,21 +260,23 @@ def doMarkovNaive(testSampleSize = 100000):
 						break
 
 					states = random_generator.parseEntry(path, logFile)
+					if states != None:
+
 					# print states
 
-					periods = statesToPeriod(states)
-					numTrans, transitionMatrix = computeTransitionMatrix(periods)
-					trainingSetNumTransitions.append(numTrans)
+						periods = statesToPeriod(states)
+						numTrans, transitionMatrix = computeTransitionMatrix(periods)
+						trainingSetNumTransitions.append(numTrans)
 
-					totalTransitionMatrix = totalTransitionMatrix + transitionMatrix
-					if cluster == 1:
-						cluster2Matrix += transitionMatrix
-					if cluster == 0:
-						cluster1Matrix += transitionMatrix
-					if cluster == 2:
-						cluster3Matrix += transitionMatrix
+						totalTransitionMatrix = totalTransitionMatrix + transitionMatrix
+						if cluster == 1:
+							cluster2Matrix += transitionMatrix
+						if cluster == 0:
+							cluster1Matrix += transitionMatrix
+						if cluster == 2:
+							cluster3Matrix += transitionMatrix
 
-					limit -= 1
+						limit -= 1
 					# print limit
 					# print totalTransitionMatrix
 

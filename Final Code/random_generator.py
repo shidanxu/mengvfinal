@@ -63,8 +63,11 @@ def parseEntry(path, filename):
 			# timeStart, timeEnd, ip, device, id = [item.strip() for item in line.split(",")]
 
 			timeStart, timeEnd, ip, device, id = [item.strip() for item in line.split(";")]
-			timeStart = datetime.strptime(timeStart, "%H:%M:%S")
-			timeEnd = datetime.strptime(timeEnd, "%H:%M:%S")
+			try:
+				timeStart = datetime.strptime(timeStart, "%H:%M:%S")
+				timeEnd = datetime.strptime(timeEnd, "%H:%M:%S")
+			except ValueError:
+				return
 
 			entries.append(Entry(timeStart, timeEnd, ip, device, id))
 
