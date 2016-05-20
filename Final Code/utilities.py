@@ -196,8 +196,8 @@ def evaluate1(trainingSetNumTransitions, dailyStates, size = 10000, basepath = '
 	print len(distributionTest)
 
 	bins = np.linspace(min(min(distributionGenerated), min(distributionTest)), max(max(distributionGenerated), max(distributionTest)), 50)
-	plt.hist(distributionTest, bins, alpha =0.5, label = 'Markov Generated')
-	plt.hist(distributionGenerated, bins, alpha = 0.5, label = 'Test Set')
+	plt.hist(distributionTest, bins, alpha =0.5, label = 'Test Set')
+	plt.hist(distributionGenerated, bins, alpha = 0.5, label = 'Markov Generated')
 	plt.hist(trainingSetNumTransitions, bins, alpha= 0.5, label = "Training Set")
 
 	plt.legend(loc='upper right')
