@@ -38,6 +38,7 @@ def timeToIndex(datetimeObj, timePeriod = 20):
 	return datetimeObj.hour * 60 / timePeriod + datetimeObj.minute / timePeriod
 
 def computeTransitionMatrix(periods, states = 3):
+	totalNumTransitions = 0
 	transitionMatrix = []
 	for jj in range(states):
 		transitionMatrix.append([0]*states)
@@ -49,12 +50,14 @@ def computeTransitionMatrix(periods, states = 3):
 		# print begin, end
 
 		transitionMatrix[begin][end] += 1
+		if begin != end:
+			totalNumTransitions += 1
 
 		# print transitionMatrix
 	assert sum([sum(item) for item in transitionMatrix]) == len(periods) - 1
 
 	# print "the matrix: ", np.matrix(transitionMatrix)
-	return np.matrix(transitionMatrix)
+	return totalNumTransitions, np.matrix(transitionMatrix)
 
 def computeProbabilityMatrix(transitionMatrix):
 	# print "to be normalized: ", transitionMatrix
@@ -69,8 +72,8 @@ def generateDataFromMarkovMatrix(markovMatrix, period = 20):
 
 	output = [1]
 	currentState = 1
-	# Run 100 rounds to get current state some not always 1 state
-	for j in range(100):
+	# Run 1000 rounds to get current state some not always 1 state
+	for j in range(1000):
 		randomNum = random.random()
 		# print "the random number is:", randomNum
 		if currentState == 1:
@@ -138,10 +141,11 @@ def generateDataFromMarkovMatrix(markovMatrix, period = 20):
 	# print output, len(output)
 	return output
 # Evaluate 1 compares the distribution of number of transitions each day for both the generated and testing actual data
-def evaluate1(dailyStates, size = 10000, basepath = '../../../alllogs/'):
+def evaluate1(trainingSetNumTransitions, dailyStates, size = 10000, basepath = '../../../alllogs/'):
 	print "length of dailyStates,", len(dailyStates)
 	print "size: ", size
 	assert len(dailyStates) == size
+	assert len(trainingSetNumTransitions) == size
 	limit = size
 
 	distributionGenerated = []
@@ -186,6 +190,8 @@ def evaluate1(dailyStates, size = 10000, basepath = '../../../alllogs/'):
 	bins = np.linspace(min(min(distributionGenerated), min(distributionTest)), max(max(distributionGenerated), max(distributionTest)), 50)
 	plt.hist(distributionTest, bins, alpha =0.5, label = 'Markov Generated')
 	plt.hist(distributionGenerated, bins, alpha = 0.5, label = 'Test Set')
+	plt.hist(trainingSetNumTransitions, bins, alpha= 0.5, label = "Training Set")
+
 	plt.legend(loc='upper right')
 	plt.title("Distribution of Daily Number of Transitions")
 
@@ -220,12 +226,16 @@ def doMarkovNaive(testSampleSize = 10000):
 	parse = True
 	basepath = '../../../alllogs/'
 
+	trainingSetNumTransitions = []
+
+
 	try:
 		os.listdir(basepath)
 	except Exception, e:
 		print e
 		parse = False
 	
+
 	if parse:
 		# File name is id, can separate by cluster
 		# files in basepath are just dates
@@ -252,7 +262,8 @@ def doMarkovNaive(testSampleSize = 10000):
 					# print states
 
 					periods = statesToPeriod(states)
-					transitionMatrix = computeTransitionMatrix(periods)
+					numTrans, transitionMatrix = computeTransitionMatrix(periods)
+					trainingSetNumTransitions.append()
 
 					totalTransitionMatrix = totalTransitionMatrix + transitionMatrix
 					if cluster == 1:
@@ -294,8 +305,10 @@ def doMarkovNaive(testSampleSize = 10000):
 		markov_generated = generateDataFromMarkovMatrix(normed_matrix)
 		dailyStates.append(markov_generated)
 
-		transitionMatrix = computeTransitionMatrix(markov_generated)
+		numTrans, transitionMatrix = computeTransitionMatrix(markov_generated)
 		# print transitionMatrix
+		trainingSetNumTransitions.append(numTrans)
+
 		testTransitionMatrix = testTransitionMatrix + transitionMatrix
 
 	# print "Testing data generated."
@@ -304,7 +317,7 @@ def doMarkovNaive(testSampleSize = 10000):
 	normed_matrix_test = computeProbabilityMatrix(testTransitionMatrix)
 	# print normed_matrix_test
 
-	evaluate1(dailyStates, size = testSampleSize)
+	evaluate1(trainingSetNumTransitions, dailyStates, size = testSampleSize)
 
 
 def featureAvg():
