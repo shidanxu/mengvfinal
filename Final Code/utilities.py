@@ -14,6 +14,7 @@ import matplotlib.pyplot as plt
 import features
 import pandas as pd
 import pickle
+import random
 
 def get_all_files(mypath):
 	return [ f for f in os.listdir(mypath) if os.path.isdir(os.path.join(mypath,f)) ]
@@ -156,6 +157,9 @@ def evaluate1(trainingSetNumTransitions, dailyStates, size = 10000, basepath = '
 	assert len(trainingSetNumTransitions) == size
 	limit = size
 
+	listOfFileNames = []
+	indices = random.sample(range(1, len()), limit)
+
 	distributionGenerated = []
 	distributionTest = []
 	done = False
@@ -171,17 +175,25 @@ def evaluate1(trainingSetNumTransitions, dailyStates, size = 10000, basepath = '
 		
 		if os.path.isdir(path):
 			for logFile in os.listdir(path):
-				with open(os.path.join(path, logFile), 'r') as f:				
-					states = random_generator.parseEntry(path, logFile)
-					
-					if states != None:
-						limit -= 1
-						periodStates = statesToPeriod(states)
-						distributionTest.append(countTransitions(periodStates))
+				listOfFileNames.append([path, logFile])
+				
+	filesForTesting = []
+	for index in indices:
+		filesForTesting.append(listOfFileNames[index])
 
-				if limit == 0:
-					done = True
-					break
+	for file1 in filesForTesting:
+		path, logFile = file1
+		with open(os.path.join(path, logFile), 'r') as f:				
+			states = random_generator.parseEntry(path, logFile)
+			
+			if states != None:
+				limit -= 1
+				periodStates = statesToPeriod(states)
+				distributionTest.append(countTransitions(periodStates))
+
+		if limit == 0:
+			done = True
+			break
 
 	# Plot
 	# plt.subplot
