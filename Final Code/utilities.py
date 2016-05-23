@@ -13,6 +13,7 @@ import random
 import matplotlib.pyplot as plt
 import features
 import pandas as pd
+import pickle
 
 def get_all_files(mypath):
 	return [ f for f in os.listdir(mypath) if os.path.isdir(os.path.join(mypath,f)) ]
@@ -196,9 +197,15 @@ def evaluate1(trainingSetNumTransitions, dailyStates, size = 10000, basepath = '
 	print len(distributionTest)
 
 	bins = np.linspace(min(min(distributionGenerated), min(distributionTest)), max(max(distributionGenerated), max(distributionTest)), 50)
-	distributionTest.toPickle("dtest.pickle")
-	distributionGenerated.toPickle("dgenerated.pickle")
-	trainingSetNumTransitions.toPickle("trainingset.pickle")
+	
+	pickle.dump(distributionTest, "dtest.pickle")
+	# distributionTest.toPickle("dtest.pickle")
+	pickle.dump(distributionGenerated, "dgenerated.pickle")
+	pickle.dump(trainingSetNumTransitions, "trainingset.pickle")
+	
+	# distributionTest.toPickle("dtest.pickle")
+	# distributionGenerated.toPickle("dgenerated.pickle")
+	# trainingSetNumTransitions.toPickle("trainingset.pickle")
 
 	plt.hist(distributionTest, bins, alpha =0.7, color = 'green', label = 'Test Set')
 	plt.hist(distributionGenerated, bins, alpha = 0.7, color= 'black',label = 'Markov Generated')
