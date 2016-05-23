@@ -198,10 +198,10 @@ def evaluate1(trainingSetNumTransitions, dailyStates, size = 10000, basepath = '
 
 	bins = np.linspace(min(min(distributionGenerated), min(distributionTest)), max(max(distributionGenerated), max(distributionTest)), 50)
 	
-	pickle.dump(distributionTest, "dtest.pickle")
+	pickle.dump(distributionTest, open("dtest.pickle", "wb" ))
 	# distributionTest.toPickle("dtest.pickle")
-	pickle.dump(distributionGenerated, "dgenerated.pickle")
-	pickle.dump(trainingSetNumTransitions, "trainingset.pickle")
+	pickle.dump(distributionGenerated, open("dgenerated.pickle", "wb" ))
+	pickle.dump(trainingSetNumTransitions, open("trainingset.pickle", "wb" ))
 	
 	# distributionTest.toPickle("dtest.pickle")
 	# distributionGenerated.toPickle("dgenerated.pickle")
