@@ -158,8 +158,7 @@ def evaluate1(trainingSetNumTransitions, dailyStates, size = 10000, basepath = '
 	limit = size
 
 	listOfFileNames = []
-	indices = random.sample(range(1, len()), limit)
-
+	
 	distributionGenerated = []
 	distributionTest = []
 	done = False
@@ -178,9 +177,11 @@ def evaluate1(trainingSetNumTransitions, dailyStates, size = 10000, basepath = '
 				listOfFileNames.append([path, logFile])
 				
 	filesForTesting = []
+	
+	indices = random.sample(range(1, len(listOfFileNames)), limit)
 	for index in indices:
 		filesForTesting.append(listOfFileNames[index])
-
+	
 	for file1 in filesForTesting:
 		path, logFile = file1
 		with open(os.path.join(path, logFile), 'r') as f:				
