@@ -219,10 +219,10 @@ def evaluate1(trainingSetNumTransitions, dailyStates, size = 10000, basepath = '
 	# distributionTest.toPickle("dtest.pickle")
 	# distributionGenerated.toPickle("dgenerated.pickle")
 	# trainingSetNumTransitions.toPickle("trainingset.pickle")
-
-	plt.hist(distributionTest, bins, alpha =0.7, color = 'green', label = 'Test Set')
-	plt.hist(distributionGenerated, bins, alpha = 0.7, color= 'black',label = 'Markov Generated')
-	plt.hist(trainingSetNumTransitions, bins, alpha= 0.7, color='blue',label = "Training Set")
+# color = 'green'
+	plt.hist(distributionTest, bins, alpha =0.7, label = 'Test Set')
+	plt.hist(distributionGenerated, bins, alpha = 0.7, label = 'Markov Generated')
+	plt.hist(trainingSetNumTransitions, bins, alpha= 0.7, label = "Training Set")
 
 	plt.legend(loc='upper right')
 	plt.title("Distribution of Daily Number of Transitions")
