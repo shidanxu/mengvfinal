@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  21 MAY 2016 00:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  23 MAY 2016 00:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**thesisv4.tex
-(./thesisv4.tex
+**thesisv5.tex
+(./thesisv5.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
@@ -369,8 +369,8 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 \c@hyp=\count129
 \c@subhyp=\count130
 
-(./thesisv4.aux)
-\openout1 = `thesisv4.aux'.
+(./thesisv5.aux)
+\openout1 = `thesisv5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
 LaTeX Font Info:    ... okay on input line 62.
@@ -495,140 +495,164 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
-thesisv4.toc
-[3])
+{/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (65.01993pt too wide) in paragraph at lines 98--99
+\OT1/cmr/m/n/10 project can be found on Github at All the work can be found on 
+Github at https://github.com/shidanxu/mengvfinal. 
+ []
+
+[2] (./thesisv5.toc [3])
 \tf@toc=\write4
-\openout4 = `thesisv4.toc'.
+\openout4 = `thesisv5.toc'.
 
- [4] (./thesisv4.lof)
+ [4] (./thesisv5.lof)
 \tf@lof=\write5
-\openout5 = `thesisv4.lof'.
+\openout5 = `thesisv5.lof'.
 
- (./thesisv4.lot [5])
+ (./thesisv5.lot [5])
 \tf@lot=\write6
-\openout6 = `thesisv4.lot'.
+\openout6 = `thesisv5.lot'.
 
- [6]
-<topneqphy.png, id=29, 244.915pt x 256.96pt>
-File: topneqphy.png Graphic file (type png)
- <use topneqphy.png>
-Package pdftex.def Info: topneqphy.png used on input line 125.
-(pdftex.def)             Requested size: 284.53508pt x 313.00455pt.
- [7] [8 <./topneqphy.png>] [9] [10] [11] [12] [13] [14]
-<imapSample.png, id=59, 1027.84pt x 486.81876pt>
+ [6] [7]
+<topneqphys.png, id=33, 282.05376pt x 318.18875pt>
+File: topneqphys.png Graphic file (type png)
+ <use topneqphys.png>
+Package pdftex.def Info: topneqphys.png used on input line 142.
+(pdftex.def)             Requested size: 284.54924pt x 312.97836pt.
+
+[8] [9 <./topneqphys.png>] [10] [11] [12] [13] [14] [15]
+<imapSample.png, id=61, 1027.84pt x 486.81876pt>
 File: imapSample.png Graphic file (type png)
  <use imapSample.png>
-Package pdftex.def Info: imapSample.png used on input line 228.
+Package pdftex.def Info: imapSample.png used on input line 238.
 (pdftex.def)             Requested size: 426.79659pt x 199.16614pt.
- [15 <./imapSample.png (PNG copy)>] [16] [17]
-<allMarkov.png, id=71, 578.16pt x 433.62pt>
+ [16 <./imapSample.png (PNG copy)>] [17] [18]
+<allMarkov.png, id=73, 578.16pt x 433.62pt>
 File: allMarkov.png Graphic file (type png)
  <use allMarkov.png>
-Package pdftex.def Info: allMarkov.png used on input line 300.
+Package pdftex.def Info: allMarkov.png used on input line 309.
 (pdftex.def)             Requested size: 426.79071pt x 312.99353pt.
- [18] [19 <./allMarkov.png>] [20] [21] <3ClusterKMeans.png, id=86, 578.16pt x 4
+ [19] [20 <./allMarkov.png>] [21] [22] <3ClusterKMeans.png, id=89, 578.16pt x 4
 33.62pt>
 File: 3ClusterKMeans.png Graphic file (type png)
 
 <use 3ClusterKMeans.png>
-Package pdftex.def Info: 3ClusterKMeans.png used on input line 375.
+Package pdftex.def Info: 3ClusterKMeans.png used on input line 369.
 (pdftex.def)             Requested size: 341.42903pt x 227.62082pt.
- [22]
-<cluterWifiWeekday.png, id=90, 578.16pt x 433.62pt>
+ [23]
+<cluterWifiWeekday.png, id=93, 578.16pt x 433.62pt>
 File: cluterWifiWeekday.png Graphic file (type png)
 
 <use cluterWifiWeekday.png>
-Package pdftex.def Info: cluterWifiWeekday.png used on input line 381.
+Package pdftex.def Info: cluterWifiWeekday.png used on input line 375.
 (pdftex.def)             Requested size: 341.42903pt x 227.62082pt.
 
-<Threefactorclustering.png, id=91, 578.16pt x 433.62pt>
+<Threefactorclustering.png, id=94, 578.16pt x 433.62pt>
 File: Threefactorclustering.png Graphic file (type png)
 
 <use Threefactorclustering.png>
-Package pdftex.def Info: Threefactorclustering.png used on input line 387.
+Package pdftex.def Info: Threefactorclustering.png used on input line 381.
 (pdftex.def)             Requested size: 341.42903pt x 256.085pt.
- [23 <./3ClusterKMeans.png> <./cluterWifiWeekday.png>] [24 <./Threefactorcluste
-ring.png>] [25]
-<clusteredAVGNUMSESSION.png, id=106, 628.0263pt x 478.4274pt>
+ [24 <./3ClusterKMeans.png> <./cluterWifiWeekday.png>] [25 <./Threefactorcluste
+ring.png>] [26]
+<clusteredAVGNUMSESSION.png, id=108, 628.0263pt x 478.4274pt>
 File: clusteredAVGNUMSESSION.png Graphic file (type png)
 
 <use clusteredAVGNUMSESSION.png>
-Package pdftex.def Info: clusteredAVGNUMSESSION.png used on input line 451.
+Package pdftex.def Info: clusteredAVGNUMSESSION.png used on input line 445.
 (pdftex.def)             Requested size: 256.08376pt x 170.71529pt.
- [26 <./clusteredAVGNUMSESSION.png>] [27]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 496.
+ [27 <./clusteredAVGNUMSESSION.png>] [28]
+[29] <c3avgses.png, id=122, 578.16pt x 433.62pt>
+File: c3avgses.png Graphic file (type png)
+ <use c3avgses.png>
+Package pdftex.def Info: c3avgses.png used on input line 498.
+(pdftex.def)             Requested size: 284.52713pt x 199.16988pt.
+ [30 <./c3avgses.png>] <durationDistribution.png, id=127, 578.16pt x 433.62pt>
+File: durationDistribution.png Graphic file (type png)
+
+<use durationDistribution.png>
+Package pdftex.def Info: durationDistribution.png used on input line 550.
+(pdftex.def)             Requested size: 284.52713pt x 199.16988pt.
+ [31 <./durationDistribution.png>] [32]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 588.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 496.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 588.
 
-<ridgeScores.png, id=116, 578.16pt x 432.1746pt>
-File: ridgeScores.png Graphic file (type png)
- <use ridgeScores.png>
-Package pdftex.def Info: ridgeScores.png used on input line 506.
-(pdftex.def)             Requested size: 284.52713pt x 199.16542pt.
- [28]
-<durationDistribution.png, id=120, 578.16pt x 433.62pt>
-File: durationDistribution.png Graphic file (type png)
-
-<use durationDistribution.png>
-Package pdftex.def Info: durationDistribution.png used on input line 516.
-(pdftex.def)             Requested size: 284.52713pt x 199.16988pt.
- [29 <./ridgeScores.png> <./durationDistribution.png>] [30] <c3avgses.png, id=1
-29, 578.16pt x 433.62pt>
-File: c3avgses.png Graphic file (type png)
- <use c3avgses.png>
-Package pdftex.def Info: c3avgses.png used on input line 545.
-(pdftex.def)             Requested size: 284.52713pt x 199.16988pt.
-
-[31 <./c3avgses.png>] [32]
-<durationDistPie.png, id=141, 643.9257pt x 433.62pt>
+<durationDistPie.png, id=139, 643.9257pt x 433.62pt>
 File: durationDistPie.png Graphic file (type png)
  <use durationDistPie.png>
-Package pdftex.def Info: durationDistPie.png used on input line 587.
+Package pdftex.def Info: durationDistPie.png used on input line 592.
 (pdftex.def)             Requested size: 284.5269pt x 256.085pt.
 
 [33 <./durationDistPie.png>] [34]
-<neuralnet.png, id=149, 350.30875pt x 294.09875pt>
+<neuralnet.png, id=147, 350.30875pt x 294.09875pt>
 File: neuralnet.png Graphic file (type png)
  <use neuralnet.png>
-Package pdftex.def Info: neuralnet.png used on input line 630.
+Package pdftex.def Info: neuralnet.png used on input line 632.
 (pdftex.def)             Requested size: 284.54498pt x 227.62349pt.
- [35 <./neuralnet.png>] [36] [37] [38] <ppsample.png, id=164, 867.24pt x 714.02
-76pt>
+ [35 <./neuralnet.png>] [36] [37] [38] [39]
+<ppsample.png, id=165, 867.24pt x 714.0276pt>
 File: ppsample.png Graphic file (type png)
-
-<use ppsample.png>
-Package pdftex.def Info: ppsample.png used on input line 701.
+ <use ppsample.png>
+Package pdftex.def Info: ppsample.png used on input line 717.
 (pdftex.def)             Requested size: 341.43787pt x 284.52736pt.
- [39 <./ppsample.png>] [40] [41] [42] [43] [44] [45]
-File: imapSample.png Graphic file (type png)
-
-<use imapSample.png>
-Package pdftex.def Info: imapSample.png used on input line 795.
-(pdftex.def)             Requested size: 426.79659pt x 199.16614pt.
- [46] <dataSample.png, id=191, 1027.84pt x 377.41pt>
+ [40 <./ppsample.png>] [41] [42] [43] [44] [45] [46] [47]
+<dataSample.png, id=192, 1027.84pt x 377.41pt>
 File: dataSample.png Graphic file (type png)
-
-<use dataSample.png>
-Package pdftex.def Info: dataSample.png used on input line 805.
+ <use dataSample.png>
+Package pdftex.def Info: dataSample.png used on input line 859.
 (pdftex.def)             Requested size: 426.79659pt x 142.25977pt.
- [47 <./dataSample.png (PNG copy)>] [48] [49] [50] [51]
-Missing character: There is no ï in font cmti10!
+ [48 <./dataSample.png (PNG copy)>] [49] <samplePymc.png, id=200, 628.3475pt x 
+144.54pt>
+File: samplePymc.png Graphic file (type png)
 
-[52] [53] (./thesisv4.aux) ) 
+<use samplePymc.png>
+Package pdftex.def Info: samplePymc.png used on input line 885.
+(pdftex.def)             Requested size: 398.33467pt x 85.35724pt.
+ [50 <./samplePymc.png>] [51] [52] [53] [54]
+Underfull \hbox (badness 4024) in paragraph at lines 980--981
+[]\OT1/cmr/m/n/10 Jacobson, Van. 2009. \OT1/cmr/m/it/10 Net-work-ing Named Con-
+tent\OT1/cmr/m/n/10 . Re-trieved May 21, 2016, from
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 996--997
+\OT1/cmr/m/n/10 2016, from http://blog.fastforwardlabs.com/post/143792498983/pr
+obabilistic-programming-
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1008
+[]\OT1/cmr/m/it/10 Probabilistic pro-gram-ming\OT1/cmr/m/n/10 . Re-trieved May 
+21, 2016, from http://probabilistic-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1012
+[]\OT1/cmr/m/it/10 scikit-learn 0.17.1 doc-u-men-ta-tion\OT1/cmr/m/n/10 . Re-tr
+ieved May 21, 2016, from http://scikit-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1014
+[]\OT1/cmr/m/it/10 NCSS Statis-tics Soft-ware Ridge Re-gres-sion\OT1/cmr/m/n/10
+ . Re-trieved May 21, 2016, from
+ []
+
+[56] [57] (./thesisv5.aux) ) 
 Here is how much of TeX's memory you used:
- 6033 strings out of 493315
- 91495 string characters out of 6137904
- 251214 words of memory out of 5000000
- 9370 multiletter control sequences out of 15000+600000
+ 6036 strings out of 493315
+ 91532 string characters out of 6137904
+ 252182 words of memory out of 5000000
+ 9373 multiletter control sequences out of 15000+600000
  12791 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,9n,38p,1616b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,7n,38p,1616b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips
 /cm-super/cm-super-ts1.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
@@ -647,10 +671,10 @@ b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesisv4.pdf (53 pages, 1729314 bytes).
+Output written on thesisv5.pdf (57 pages, 1783230 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 172 compressed objects within 2 object streams
+ 285 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

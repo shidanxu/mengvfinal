@@ -1,0 +1,155 @@
+\relax 
+\citation{bishop}
+\citation{markov}
+\citation{mobilityfirst}
+\citation{find}
+\citation{mobilityfirst}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Project Background}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Relations to MobilityFirst}{7}}
+\citation{jacobson}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Current Internet Has Inefficiency in Topological Distance}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Physical proximity does not guarantee topological proximity. Small moves in physical space may be large moves in Network topology. The path from the 4G LTE network to the MIT network goes through US Eastern.\relax }}{9}}
+\citation{whyonlyus}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Data Analysis Approaches on Networks Problem}{10}}
+\citation{yang}
+\citation{yang}
+\citation{yang}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Previous Works on Quantitative Network Measurements}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Sookhyun Yang's Three State Markov Model}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Choosing the Dataset}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Comments on Yang's Work}{12}}
+\citation{beverly}
+\citation{kulkarni}
+\citation{pporg}
+\citation{ghah}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Beverly Applies Machine Learning to Extract Most Important IP Bit for Traffic Congestion}{13}}
+\citation{tenenbaum}
+\citation{yang}
+\citation{beverly}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Probabilistic Programming As a Tool For Fast Modeling}{14}}
+\@writefile{toc}{\contentsline {paragraph}{Summary}{15}}
+\citation{yang}
+\citation{yang}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Reproducing Yang Paper Results}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}A Peek of the Dataset}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Sample IMAP entry for 2014.01.28\relax }}{16}}
+\citation{yang}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Markov Chain For Transition Prediction}{17}}
+\citation{markov}
+\citation{markov}
+\citation{yang}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Different kinds of Markov Models\cite  {markov}\relax }}{18}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Empirical estimates of transition probabilities. Data acquired on training sample (10000 user days).\relax }}{19}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Evaluate Markov Chain Prediction}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The distribution of number of transitions from Markov chain and testing set. Sample size 10000 user days each.\relax }}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The distribution of number of transitions from training set and testing set. Sample size 10000 user days each. The light blue regions are overlaps of both sets.\relax }}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Aspects of Modeling where Markov Chain Falls Short}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Questions that Emerge from Yang Experiment Reproduction}{22}}
+\citation{tibshirani}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Modeling}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Clustering Finds Three Groups}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The clustering algorithm output. X-axis is average duration in seconds. Y-axis is session start hour. Average duration length significantly affected the clustering. The green dots represent the centers of each cluster.\relax }}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces X-axis is portion of user entry generated from a wifi network. Y-axis is day of the week. Those were two of the features that did not significantly affected the clustering.\relax }}{25}}
+\citation{yang}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The K-means clustering algorithm output. The top three factors for separating the dataset are average duration per session, average number of sessions in one day, and the average starting hour for sessions.\relax }}{26}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Clustering Shines Light on Canonical User}{27}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Empirical estimates of transition probabilities for all users.\relax }}{27}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Empirical estimates of transition probabilities for the long duration cluster.\relax }}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The average number of sessions per cluster.\relax }}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Regression Helps Weighing Factors}{28}}
+\citation{ridge}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}Ridge Regression}{29}}
+\@writefile{toc}{\contentsline {paragraph}{Background}{29}}
+\citation{bishop}
+\citation{scikitlearn}
+\@writefile{toc}{\contentsline {paragraph}{Results}{30}}
+\@writefile{toc}{\contentsline {paragraph}{Predicting Number of Sessions}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The long cluster average session length prediction. Each integer on the x-axis is a feature and the y-axis is showing the feature's corresponding weight.\relax }}{31}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}Logistic Regression}{32}}
+\@writefile{toc}{\contentsline {paragraph}{Motivation}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces The distribution of session durations, in seconds. Note the second peak at the hour mark.\relax }}{32}}
+\citation{cmulogisitc}
+\@writefile{toc}{\contentsline {paragraph}{Background}{33}}
+\citation{scikitlearn}
+\@writefile{toc}{\contentsline {paragraph}{Results}{34}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The distribution of session durations, by tags.\relax }}{34}}
+\citation{bishop}
+\citation{neuralnetdesign}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Neural Net Increases Performance}{35}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.1}Background}{35}}
+\citation{bishop}
+\citation{bishop}
+\citation{bishop}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces A one hidden-layer feed forward neural net. Image courtesy to Bishop\cite  {bishop}.\relax }}{36}}
+\@writefile{toc}{\contentsline {paragraph}{Mathematical Background}{36}}
+\citation{tensorflow}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.4.2}Results and Discussion}{37}}
+\citation{ng}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Comparison of different number of nodes in the hidden layer.\relax }}{38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Bayesian Modeling and Probabilistic Programming}{38}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.1}Generative vs. Discriminative Modeling}{38}}
+\citation{ppblog}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.5.2}Probabilistic Programming}{39}}
+\citation{pymc3}
+\citation{pymc3}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces An example PP output using PYMC3. \relax }}{41}}
+\@writefile{toc}{\contentsline {paragraph}{Summary}{42}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Approach Comparison}{43}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Speed}{43}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Complexity of different approaches.\relax }}{44}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Prediction Accuracy}{44}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Prediction Accuracy of different approaches.\relax }}{44}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Relevance to Dataset}{45}}
+\@writefile{toc}{\contentsline {paragraph}{Summary}{46}}
+\citation{pandas}
+\citation{tensorflow}
+\citation{pymc3}
+\citation{scikitlearn}
+\citation{ghah}
+\citation{pymc3}
+\citation{pystan}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Toolkit}{47}}
+\citation{pymcstan}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Comparison of various Python probabilistic programming APIs.\relax }}{48}}
+\@writefile{toc}{\contentsline {paragraph}{Summary}{48}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Challenges}{49}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Challenges in the Dataset}{49}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Sample session data, each line is a session. The column headers are session start time, session end time, IP, device, user ID.\relax }}{49}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Challenges in Technology}{51}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Exponential distribution implementation in PYMC3.\relax }}{51}}
+\citation{twiecki2}
+\citation{tenenbaum}
+\@writefile{toc}{\contentsline {paragraph}{Summary}{53}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Contributions and Conclusion}{54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Contributions}{54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Conclusion}{55}}
+\bibstyle{plain}
+\bibcite{beverly}{1}
+\bibcite{ghah}{2}
+\bibcite{jacobson}{3}
+\bibcite{ng}{4}
+\bibcite{yang}{5}
+\bibcite{kulkarni}{6}
+\bibcite{find}{7}
+\bibcite{pymc3}{8}
+\bibcite{tenenbaum}{9}
+\bibcite{tibshirani}{10}
+\bibcite{ppblog}{11}
+\bibcite{pymcstan}{12}
+\bibcite{whyonlyus}{13}
+\bibcite{mobilityfirst}{14}
+\bibcite{netsfia}{15}
+\bibcite{pporg}{16}
+\bibcite{markov}{17}
+\bibcite{clustering}{18}
+\bibcite{ridge}{19}
+\bibcite{bishop}{20}
+\bibcite{cmulogisitc}{21}
+\bibcite{neuralnetdesign}{22}
+\bibcite{kmeanscomplexity}{23}
+\bibcite{twiecki2}{24}
+\bibcite{pandas}{25}
+\bibcite{tensorflow}{26}
+\bibcite{scikitlearn}{27}
+\bibcite{pystan}{28}

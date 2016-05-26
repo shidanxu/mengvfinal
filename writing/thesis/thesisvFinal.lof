@@ -1,0 +1,15 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Physical proximity does not guarantee topological proximity. Small moves in physical space may be large moves in Network topology. The path from the 4G LTE network to the MIT network goes through US Eastern.\relax }}{9}
+\contentsline {figure}{\numberline {2}{\ignorespaces Sample IMAP entry for 2014.01.28\relax }}{16}
+\contentsline {figure}{\numberline {3}{\ignorespaces The distribution of number of transitions from Markov chain and testing set. Sample size 10000 user days each.\relax }}{20}
+\contentsline {figure}{\numberline {4}{\ignorespaces The distribution of number of transitions from training set and testing set. Sample size 10000 user days each. The light blue regions are overlaps of both sets.\relax }}{21}
+\contentsline {figure}{\numberline {5}{\ignorespaces The clustering algorithm output. X-axis is average duration in seconds. Y-axis is session start hour. Average duration length significantly affected the clustering. The green dots represent the centers of each cluster.\relax }}{25}
+\contentsline {figure}{\numberline {6}{\ignorespaces X-axis is portion of user entry generated from a wifi network. Y-axis is day of the week. Those were two of the features that did not significantly affected the clustering.\relax }}{25}
+\contentsline {figure}{\numberline {7}{\ignorespaces The K-means clustering algorithm output. The top three factors for separating the dataset are average duration per session, average number of sessions in one day, and the average starting hour for sessions.\relax }}{26}
+\contentsline {figure}{\numberline {8}{\ignorespaces The average number of sessions per cluster.\relax }}{28}
+\contentsline {figure}{\numberline {9}{\ignorespaces The long cluster average session length prediction. Each integer on the x-axis is a feature and the y-axis is showing the feature's corresponding weight.\relax }}{31}
+\contentsline {figure}{\numberline {10}{\ignorespaces The distribution of session durations, in seconds. Note the second peak at the hour mark.\relax }}{32}
+\contentsline {figure}{\numberline {11}{\ignorespaces The distribution of session durations, by tags.\relax }}{34}
+\contentsline {figure}{\numberline {12}{\ignorespaces A one hidden-layer feed forward neural net. Image courtesy to Bishop\cite {bishop}.\relax }}{36}
+\contentsline {figure}{\numberline {13}{\ignorespaces An example PP output using PYMC3. \relax }}{41}
+\contentsline {figure}{\numberline {14}{\ignorespaces Sample session data, each line is a session. The column headers are session start time, session end time, IP, device, user ID.\relax }}{49}
+\contentsline {figure}{\numberline {15}{\ignorespaces Exponential distribution implementation in PYMC3.\relax }}{51}

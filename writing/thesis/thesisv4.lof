@@ -1,15 +1,15 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Topological mobility is not equal to physical mobility. The nearest common ancestor for the 4G LTE network and the MIT network goes all the way up to US Eastern.\relax }}{8}
+\contentsline {figure}{\numberline {1}{\ignorespaces Physical proximity does not guarantee topological proximity. The path from the 4G LTE network to the MIT network goes through US Eastern.\relax }}{8}
 \contentsline {figure}{\numberline {2}{\ignorespaces Sample IMAP entry for 2014.01.28\relax }}{15}
-\contentsline {figure}{\numberline {3}{\ignorespaces The distribution of number of transitions from Markov chain and testing set. Sample size 1000 user days each.\relax }}{19}
-\contentsline {figure}{\numberline {4}{\ignorespaces The clustering algorithm output. X-axis is average duration in seconds. Y-axis is session start hour. Average duration length significantly affected the clustering. The green dots represent the centers of each cluster.\relax }}{22}
-\contentsline {figure}{\numberline {5}{\ignorespaces X-axis is portion of user entry being from a wifi ISP. Y-axis is day of the week. Those were two of the features that did not significantly affected the clustering.\relax }}{22}
-\contentsline {figure}{\numberline {6}{\ignorespaces The K-means clustering algorithm output. The top three factors for separating the dataset are average duration per session, average number of sessions in one day, and the average starting hour for sessions.\relax }}{23}
-\contentsline {figure}{\numberline {7}{\ignorespaces The average number of sessions per cluster.\relax }}{25}
-\contentsline {figure}{\numberline {8}{\ignorespaces Ridge Regression Scores. Lambda values do not significantly affect performance.\relax }}{28}
-\contentsline {figure}{\numberline {9}{\ignorespaces The distribution of session durations, in seconds. Note the second peak at the hour mark.\relax }}{28}
-\contentsline {figure}{\numberline {10}{\ignorespaces The long cluster average session length prediction. Each $x_i, i \in \{0,1,2,3,4,5,6\}$ is a parameter and the y-axis is showing the variable's corresponding weight.\relax }}{30}
-\contentsline {figure}{\numberline {11}{\ignorespaces The distribution of session durations, by tags.\relax }}{32}
-\contentsline {figure}{\numberline {12}{\ignorespaces A one hidden-layer feed forward neural net. Image courtesy to Bishop\cite {bishop}.\relax }}{34}
-\contentsline {figure}{\numberline {13}{\ignorespaces An example PP output using PYMC3. A is the distribution of start times of a typical session, which is modeled as normal. We see that the mean is normally distributed around 12.033 with $\sigma $ of approximately 6. The right column shows each sampled $\mu $ and $\sigma $ values over the 500 sample Monte Carlo trials.\relax }}{38}
-\contentsline {figure}{\numberline {14}{\ignorespaces Sample IMAP entry for 2014.01.28\relax }}{45}
-\contentsline {figure}{\numberline {15}{\ignorespaces Sample session data, each line is a session. The column headers are session start time, session end time, IP, device, user ID.\relax }}{46}
+\contentsline {figure}{\numberline {3}{\ignorespaces The distribution of number of transitions from Markov chain, training and testing set. Sample size 10000 user days each.\relax }}{19}
+\contentsline {figure}{\numberline {4}{\ignorespaces The clustering algorithm output. X-axis is average duration in seconds. Y-axis is session start hour. Average duration length significantly affected the clustering. The green dots represent the centers of each cluster.\relax }}{23}
+\contentsline {figure}{\numberline {5}{\ignorespaces X-axis is portion of user entry generated from a wifi network. Y-axis is day of the week. Those were two of the features that did not significantly affected the clustering.\relax }}{23}
+\contentsline {figure}{\numberline {6}{\ignorespaces The K-means clustering algorithm output. The top three factors for separating the dataset are average duration per session, average number of sessions in one day, and the average starting hour for sessions.\relax }}{24}
+\contentsline {figure}{\numberline {7}{\ignorespaces The average number of sessions per cluster.\relax }}{26}
+\contentsline {figure}{\numberline {8}{\ignorespaces Ridge Regression Scores. Lambda values do not significantly affect performance.\relax }}{29}
+\contentsline {figure}{\numberline {9}{\ignorespaces The distribution of session durations, in seconds. Note the second peak at the hour mark.\relax }}{29}
+\contentsline {figure}{\numberline {10}{\ignorespaces The long cluster average session length prediction. Each integer on the x-axis is a feature and the y-axis is showing the feature's corresponding weight.\relax }}{31}
+\contentsline {figure}{\numberline {11}{\ignorespaces The distribution of session durations, by tags.\relax }}{33}
+\contentsline {figure}{\numberline {12}{\ignorespaces A one hidden-layer feed forward neural net. Image courtesy to Bishop\cite {bishop}.\relax }}{35}
+\contentsline {figure}{\numberline {13}{\ignorespaces An example PP output using PYMC3. A is the distribution of start times of a typical session, which is modeled as normal. We see that the mean is normally distributed around 12.033 with $\sigma $ of approximately 6. The right column shows each sampled $\mu $ and $\sigma $ values over the 500 sample Monte Carlo trials.\relax }}{39}
+\contentsline {figure}{\numberline {14}{\ignorespaces Sample IMAP entry for 2014.01.28\relax }}{46}
+\contentsline {figure}{\numberline {15}{\ignorespaces Sample session data, each line is a session. The column headers are session start time, session end time, IP, device, user ID.\relax }}{47}
